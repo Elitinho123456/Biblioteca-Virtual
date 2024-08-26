@@ -1,0 +1,40 @@
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;/**/
+}
+
+.card{
+    border: 1px solid var(--cor-fundo);
+    border-radius: 8px; /*Arredonda os cantos da borda*/
+    padding: 16px; /*Adiciona espaço interno*/
+    margin-bottom: 16px;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box; /**/
+}
+.card img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.card h4 h2{
+    margin-top: 8px;
+    color: var(--cor-secundaria);
+}
+button {
+    width: 195px; /* Define a largura do botão */
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura do container */
+    padding: 8px; /* Adiciona espaço interno ao redor do texto do botão */
+    background-color: var(--cor-fundo); /* Define a cor de fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    color: var(--cor-secundaria); /* Define a cor do texto do botão */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha quando passa sobre o botão */
+}
+
+/* Define o estilo do botão ao passar o mouse sobre ele */
+button:hover{
+    background-color: var(--cor-primaria); /* Muda a cor de fundo do botão para a cor primária ao passar o mouse */
+    color: var(--cor-branca); /* Muda a cor do texto do botão para branco ao passar o mouse */
+}

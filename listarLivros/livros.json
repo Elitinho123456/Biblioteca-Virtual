@@ -1,0 +1,32 @@
+[
+    {
+        "nome" : "yuji",
+        "imagem":"img/yuji.jpg"
+    },
+
+    
+   {
+        "nome" : "guts",
+        "imagem":"img/guts.jpg"
+   },
+    
+    {
+        "nome" : "haru",
+        "imagem":"img/haru.webp"
+    },
+    {
+        "nome": "kimetsu",
+        "imagem":"img/kimetsu.jpg"
+    },
+    {
+    "nome": "kimetsu",
+    "imagem":"img/kimetsu.jpg"
+    },
+    {
+    "nome": "kaiju",
+    "imagem":"img/kaiju.jpg"
+    }
+    
+    
+
+]

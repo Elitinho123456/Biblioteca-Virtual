@@ -1,0 +1,76 @@
+/* Alinha itens no centro, define espaço entre eles e margem direita para elementos com a classe "menu" */
+.menu {
+    align-items: center; /* Alinha itens no centro verticalmente */
+    gap: 10px; /* Define o espaço entre os itens */
+    margin-right: 18px; /* Adiciona margem à direita */
+  }
+  
+  /* Remove a decoração e define a cor para links com a classe "link_menu" */
+  .link_menu {
+    text-decoration: none; /* Remove a decoração do texto */
+    color: var(--cor-secundaria); /* Define a cor do texto como preto */
+  }
+  
+  /* Remove a lista padrão e margens/paddings para elementos ul dentro de elementos com a classe "menu" */
+  .menu ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+  }
+  
+  /* Define posição relativa, padding, margem e cor de fundo para elementos li dentro de elementos com a classe "menu" */
+  .menu li {
+    position: relative; /* Define a posição relativa */
+    padding: 8px; /* Adiciona padding ao redor do elemento */
+    margin-bottom: 7px; /* Adiciona margem inferior */
+    background-color: var(--cor-fundo); /* Usa a cor de fundo padrão */
+  }
+  
+  /* Define a cor de fundo ao passar o mouse sobre os elementos li dentro de elementos com a classe "menu" */
+  .menu li:hover {
+    background-color: var(--cor-primaria); /* Usa a cor primária */
+    cursor: pointer;
+  }
+  
+  .menu li:hover .link_menu {
+    color: var(--cor-branca);
+  }
+  
+  /* Mostra o submenu ao passar o mouse sobre elementos li com a classe "has-sub" dentro de elementos com a classe "menu" */
+  .menu .has-sub:hover .submenu {
+    display: grid; /* Mostra o submenu como grid */
+  }
+  
+  /* Esconde o submenu por padrão, define sua posição e aparência */
+  .submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Define a posição absoluta */
+    left: 101%; /* Posiciona à esquerda do elemento pai */
+    top: 0; /* Alinha ao topo do elemento pai */
+    background-color: var(--cor-fundo); /* Usa a cor de fundo padrão */
+    list-style: none; /* Remove os marcadores da lista */
+    min-width: 200px; /* Define a largura mínima */
+    align-items: center; /* Alinhar itens no centro, assim como o menu principal */
+  }
+
+  .link_sub_menu{
+    text-decoration: none; /*Remove a decoração do texto*/
+    color: var(--cor-secundaria);
+  }
+
+  .link_sub_menu:hover{
+    color: var(--cor-branca); /*Define a cor da letra ao passar o mouse*/
+  }
+  .submenu li{
+    position: relative; /*Define a posição relativa*/
+    padding: 8px; /*Adiciona um tamanho ao componente do link*/
+    margin-bottom: 7px; /*Espaço entre os itens*/
+    background-color: var(--cor-fundo);
+  }
+  .submenu li:hover{
+    background-color: var(--cor-primaria); /*Muda a cor do componente do menu ao passar o mouse*/
+  }
+  .submenu li:hover .link_sub_menu{
+    color: var(--cor-branca);
+  }
+  

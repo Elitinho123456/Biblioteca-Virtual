@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura dos elementos */
+}
+
+
+.row::after {
+    content: "";      /* Cria um conteúdo vazio para o pseudo-elemento */
+    clear: both;     /* Limpa ambos os lados (esquerdo e direito) dos floats */
+    display: table;  /* Exibe o pseudo-elemento como uma tabela, garantindo que o clearfix funcione */
+}
+
+
+[class*="col-"] {
+    float: left;          /* Faz com que os elementos flutuem para a esquerda, permitindo que se alinhem horizontalmente */
+    padding: 15px;       /* Adiciona 15 pixels de padding ao redor do conteúdo das colunas */
+}
+
+
+.col-1 { width: 8.33%; }     /* Define a largura da coluna como 8.33% da largura do contêiner */
+.col-2 { width: 16.66%; }    /* Define a largura da coluna como 16.66% da largura do contêiner */
+.col-3 { width: 25%; }       /* Define a largura da coluna como 25% da largura do contêiner */
+.col-4 { width: 33.33%; }    /* Define a largura da coluna como 33.33% da largura do contêiner */
+.col-5 { width: 41.66%; }    /* Define a largura da coluna como 41.66% da largura do contêiner */
+.col-6 { width: 50%; }       /* Define a largura da coluna como 50% da largura do contêiner */
+.col-7 { width: 58.33%; }    /* Define a largura da coluna como 58.33% da largura do contêiner */
+.col-8 { width: 66.66%; }    /* Define a largura da coluna como 66.66% da largura do contêiner */
+.col-9 { width: 75%; }       /* Define a largura da coluna como 75% da largura do contêiner */
+.col-10 { width: 83.33%; }   /* Define a largura da coluna como 83.33% da largura do contêiner */
+.col-11 { width: 91.66%; }   /* Define a largura da coluna como 91.66% da largura do contêiner */
+.col-12 { width: 100%; }     /* Define a largura da coluna como 100% da largura do contêiner */
+
+
+@media only screen and (max-width: 768px) {
+    /* Para celulares: */
+    [class*="col-"] {
+        width:5%;  /* Define a largura das colunas como 100% para telas menores que 768px de largura */
+    }
+}

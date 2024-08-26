@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="/css/menus.css">
+    <link rel="stylesheet" type="text/css" href="/css/grides.css">
+    <link rel="stylesheet" type="text/css" href="/css/livros.css">
+    <link rel="stylesheet" type="text/css" href="/css/rodape.css">
+    <title>Aula 06</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteiner cabecalho">
+            <div class="logo">
+                <div>Biblioteca</div>
+                <div class="virtual">Virtual</div>
+            </div>
+            <div class="pesquisa conteiner">
+                <svg class="lupa" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                    viewBox="0 0 256 256">
+                    <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                </svg>
+                <input class="pesquisa_input" type="search" placeholder="Pesquisar">
+            </div>
+            <div class="menu conteiner">
+                <div><a class="link_cabecalho" href="#">Mais Vendidos</a></div>
+                <div><a class="link_cabecalho" href="#">Categoria</a></div>
+                <div><a class="link_cabecalho" href="#">Login</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+		<div class="col-2 menu">
+			<ul>
+				<li><a href="#" class="link_menu">Administração e Negócios</a></li>
+				<li class="has-sub"><a href="#" class="link_menu">Literatura Infantojuvenil</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Livros para Colorir</a></li>
+						<li><a href="#" class="link_sub_menu">Literatura Juvenil</a></li>
+						<li><a href="#" class="link_sub_menu">HQ's e Mangás</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Literatura Estrangeira</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Biografias e Memórias</a></li>
+						<li><a href="#" class="link_sub_menu">Poesia</a></li>
+						<li><a href="#" class="link_sub_menu">Policial e Suspense</a></li>
+						<li><a href="#" class="link_sub_menu">Romance</a></li>
+						<li><a href="#" class="link_sub_menu">Terror</a></li>
+						<li><a href="#" class="link_sub_menu">Contos e Crônicas</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Religião e Espiritualidade</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Afrobrasileiras</a></li>
+						<li><a href="#" class="link_sub_menu">Bíblias</a></li>
+						<li><a href="#" class="link_sub_menu">Esoterismo</a></li>
+						<li><a href="#" class="link_sub_menu">Teologia</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Autoajuda</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Desenvolvimento Pessoal</a></li>
+						<li><a href="#" class="link_sub_menu">Relações Interpessoais</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Didáticos</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Ensino Fundamental I</a></li>
+						<li><a href="#" class="link_sub_menu">Psicologia</a></li>
+						<li><a href="#" class="link_sub_menu">Psicologia e Psicanálise</a></li>
+						<li><a href="#" class="link_sub_menu">Ciências Humanas e Sociais</a></li>
+						<li><a href="#" class="link_sub_menu">Filosofia</a></li>
+						<li><a href="#" class="link_sub_menu">Política e Atualidades</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Ciências Biológicas e Medicina</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Psiquiatria</a></li>
+						<li><a href="#" class="link_sub_menu">Biologia</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Gastronomia</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Culinária</a></li>
+						<li><a href="#" class="link_sub_menu">Chefs</a></li>
+						<li><a href="#" class="link_sub_menu">Dietas</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Artes</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Teatro</a></li>
+						<li><a href="#" class="link_sub_menu">Música</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="#" class="link_menu">Esportes e Lazer/Turismo</a>
+					<ul class="submenu">
+						<li><a href="#" class="link_sub_menu">Esportes e Lazer</a></li>
+						<li><a href="#" class="link_sub_menu">Geografia e História</a></li>
+						<li><a href="#" class="link_sub_menu">História do Brasil</a></li>
+						<li><a href="#" class="link_sub_menu">História Mundial</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="link_menu">Informática</a></li>
+				<li><a href="#" class="link_menu">Jogos</a></li>
+			</ul>			
+		</div>
+
+		<div class="col-9">
+            <div class="conteiner">
+                <div class="card">
+                    <img src="/imagens/guts.jpg" alt="Livro">
+                    <h4>O senhor dos Anéis</h4>
+                    <h2>R$ 59,90</h2>
+                    <button type="submit">Comprar</button>
+                </div>
+            </div>
+        </div>
+	</div>
+	<footer>
+        <div class="conteiner rodape">
+            <div class="coluna">
+                <h3>Sobre a biblioteca virtual</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Vale-presente</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h3>Atendimento ao cliente</h3>
+                <ul>
+                    <li><a href="#">Entre em contato</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de vendas</a></li>
+                    <li><a href="#">Perguntas e resposta</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h3>Serviços</h3>
+                <ul>
+                    <li><a href="#">Pass</a></li>
+                    <li><a href="#">Sebo</a></li>
+                    <li><a href="#">+ Mais</a></li>
+                    <li><a href="#">Eventos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
